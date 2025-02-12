@@ -1,0 +1,67 @@
+scale_id,scale_text,scale_min,scale_max,source,category,topics,notes,status
+,Plain text of the scale question or prompt,"Label for the minimum value of the scale (e.g., ""Strongly disagree"")","Label for the maximum value of the scale (e.g., ""Strongly agree"")",Source of the scale: either the researcher that originally proposed it or the authors and date of the paper or prior work from which it was drawn,"High-level category for the scale (e.g., moral beliefs/values): assigned by study designers based on source from which it was originally drawn","[OPTIONAL]
+Additional topic areas or psychological constructs the scale probes: values in this column will not be enforced may be used later","[OPTIONAL]
+Any useful context or guidance about this question","What the scale is being used for: possible values include ""brainstorm"", ""introspection study"", ""social inference study"" "
+1,I consider myself as:,Not at all feminine,Totally feminine,"Kachel, Steffens, & Niedlich, 2016",demographic,,"Can also ask for single evaluation with totally feminine, totally masculine at opposite ends of scale",introspection study 1
+2,I consider myself as:,Not at all masculine,Totally masculine,"Kachel, Steffens, & Niedlich, 2016",demographic,,"Can also ask for single evaluation with totally feminine, totally masculine at opposite ends of scale",introspection study 1
+3,How would you describe your political views?,Very conservative,Very liberal,Gallup,demographic,,"Gallup polling has intermediate values for ""Conservative"", ""Moderate"", and ""Liberal""",introspection study 1
+4,How important would you say religion is in your own life?,Not very important,Very important,Gallup,demographic,,"Gallup polling has intermediate value ""fairly important""",introspection study 1
+5,I see myself as someone who...is trustworthy,Strongly disagree,Strongly agree,"Oosterhof & Todorov, 2008",face processing,,,introspection study 1
+6,I see myself as someone who...is dominant,Strongly disagree,Strongly agree,"Oosterhof & Todorov, 2008",face processing,,,introspection study 1
+7,I see myself as someone who...is attractive,Strongly disagree,Strongly agree,"Oosterhof & Todorov, 2008",face processing,,Maybe skip?,brainstorm
+8,I see myself as someone who...is unhappy,Strongly disagree,Strongly agree,"Oosterhof & Todorov, 2008",face processing,,,introspection study 1
+9,I see myself as someone who...is sociable,Strongly disagree,Strongly agree,"Oosterhof & Todorov, 2008",face processing,,Duplicate in Big Five Inventory,brainstorm
+10,I see myself as someone who...is emotionally stable,Strongly disagree,Strongly agree,"Oosterhof & Todorov, 2008",face processing,,Duplicate in Big Five Inventory,brainstorm
+11,I see myself as someone who...is mean,Strongly disagree,Strongly agree,"Oosterhof & Todorov, 2008",face processing,,,introspection study 1
+12,I see myself as someone who...is boring,Strongly disagree,Strongly agree,"Oosterhof & Todorov, 2008",face processing,,,introspection study 1
+13,I see myself as someone who...is aggressive,Strongly disagree,Strongly agree,"Oosterhof & Todorov, 2008",face processing,,,introspection study 1
+14,I see myself as someone who...is weird,Strongly disagree,Strongly agree,"Oosterhof & Todorov, 2008",face processing,,,introspection study 1
+15,I see myself as someone who...is intelligent,Strongly disagree,Strongly agree,"Oosterhof & Todorov, 2008",face processing,,,introspection study 1
+16,I see myself as someone who...is confident,Strongly disagree,Strongly agree,"Oosterhof & Todorov, 2008",face processing,,,introspection study 1
+17,I see myself as someone who...is caring,Strongly disagree,Strongly agree,"Oosterhof & Todorov, 2008",face processing,,,introspection study 1
+18,I see myself as someone who...is egotistic,Strongly disagree,Strongly agree,"Oosterhof & Todorov, 2008",face processing,,,introspection study 1
+19,I see myself as someone who...is responsible,Strongly disagree,Strongly agree,"Oosterhof & Todorov, 2008",face processing,,,introspection study 1
+20,I see myself as someone who...is talkative,Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+21,I see myself as someone who...tends to find fault with others,Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+22,I see myself as someone who...does a thorough job,Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+23,"I see myself as someone who...is depressed, blue",Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+24,"I see myself as someone who...is original, comes up with new ideas",Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+25,I see myself as someone who...is reserved,Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+26,I see myself as someone who...is helpful and unselfish with others,Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+27,I see myself as someone who...can be somewhat careless,Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+28,"I see myself as someone who...is relaxed, handles stress well",Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+29,I see myself as someone who...is curious about many different things,Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+30,I see myself as someone who...is full of energy,Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+31,I see myself as someone who...starts quarrels with others,Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+32,I see myself as someone who...is a reliable worker,Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+33,I see myself as someone who...can be tense,Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+34,"I see myself as someone who...is ingenious, a deep thinker",Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+35,I see myself as someone who...generates a lot of enthusiasm,Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+36,I see myself as someone who...has a forgiving nature,Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+37,I see myself as someone who...tends to be disorganized,Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+38,I see myself as someone who...worries a lot,Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+39,I see myself as someone who...has an active imagination,Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+40,I see myself as someone who...tends to be quiet,Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+41,I see myself as someone who...is generally trusting,Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+42,I see myself as someone who...tends to be lazy,Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+43,"I see myself as someone who...is emotionally stable, not easily upset",Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+44,I see myself as someone who...is inventive,Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+45,I see myself as someone who...has an assertive personality,Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+46,I see myself as someone who...can be cold and aloof,Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+47,I see myself as someone who...perseveres until the task is finished,Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+48,I see myself as someone who...can be moody,Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+49,"I see myself as someone who...values artistic, aesthetic experiences",Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+50,"I see myself as someone who...is sometimes shy, inhibited",Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+51,I see myself as someone who...is considerate and kind to almost everyone,Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+52,I see myself as someone who...does things efficiently,Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+53,I see myself as someone who...remains calm in tense situations,Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+54,I see myself as someone who...prefers work that is routine,Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+55,"I see myself as someone who...is outgoing, sociable",Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+56,I see myself as someone who...is sometimes rude to others,Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+57,I see myself as someone who...makes plans and follows through with them,Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+58,I see myself as someone who...gets nervous easily,Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+59,"I see myself as someone who...likes to reflect, play with ideas",Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+60,I see myself as someone who...has few artistic interests,Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+61,I see myself as someone who...likes to cooperate with others,Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+62,I see myself as someone who...is easily distracted,Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1
+63,"I see myself as someone who...is sophisticated in art, music, or literature",Strongly disagree,Strongly agree,"John & Srivastava, 1999",personality,,,introspection study 1

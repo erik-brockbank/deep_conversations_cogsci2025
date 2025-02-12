@@ -1,15 +1,16 @@
-Directory to contain experiment code (e.g., HTML/CSS/JavaScript) for this project.
+# EXPERIMENTS
 
-### Checklist for starting data collection on new online experiment
-- Complete your OSF pre-registration worksheet
-- Make sure that data is being saved correctly by drafting your analysis notebook
-- Write instructions
-- Figure out how subject payment is going to work
-- Add consent form to appear before instructions
+## In this directory
+- `/experiment_1`: code for Experiment 1
+- `/experiment_2`: code for Experiment 2
 
-#### Using Amazon Mechanical Turk?
-- Configure HIT settings using nosub: https://github.com/longouyang/nosub
-- Test task out in MTurk Sandbox
 
-### Using Prolific? 
-- `TODO: add instructions here`
+## Overview
+
+Both experiments are coded to run as static web pages: you can preview them by opening the relevant `index.html` file under each experiment directory.
+- Experiment 1 is hosted on Github Pages [HERE](https://erik-brockbank.github.io/deep_conversations/experiments/norming_study/).
+- Experiment 2 is hosted on Github Pages [HERE](https://erik-brockbank.github.io/deep_conversations/experiments/introspection_study).
+
+Both experiments write data (not currently active) using the JsPsych [DataPipe](https://pipe.jspsych.org/) plugin for OSF.
+- Data for Experiment 1 is stored on OSF [HERE](https://osf.io/p84m6/)
+- Data for Experiment 2 is stored on OSF [HERE](https://osf.io/t6gsh/).

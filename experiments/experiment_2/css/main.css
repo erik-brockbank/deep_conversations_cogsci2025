@@ -1,0 +1,59 @@
+/*
+ * Styles for the experiment that supplement the jspsych styling in `jspsych.css`
+ */
+
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+p {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+br {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+img {
+  pointer-events: none;
+}
+
+.bounding-div {
+  width: 1200px;
+}
+
+.scale-container {
+  padding: 10px;
+}
+
+#scale-progress {
+  font-size: 16px;
+  font-style: italic;
+}
+
+#scale-text {
+  font-size: 18px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+#trial-index{
+  text-align: center;
+  font-size: 24px;
+  font-style: italic;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+#trial-timer{
+  text-align: center;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}

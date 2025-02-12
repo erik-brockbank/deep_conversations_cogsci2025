@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Deep Conversations</title>
+    <!-- favicon: local -->
+    <!-- <link rel="icon" type="image/png" href="/img/splash_nologo.png"> -->
+    <!-- favicon: remote -->
+    <link rel="icon" type="image/png" href="/deep_conversations/experiments/norming_study/img/splash_nologo.png">
+    <!-- jsPsych plugins -->
+    <script src="https://unpkg.com/jspsych@8.1.0"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-fullscreen@2.0.0"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-html-slider-response@2.0.0"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-instructions@2.0.1"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-survey-html-form@2.0.0"></script>
+    <!-- DataPipe -->
+    <script src="https://unpkg.com/@jspsych-contrib/plugin-pipe"></script>
+
+    <!-- Local scripts -->
+    <script src="js/globals.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/introspection_scales.js"></script>
+    <script src="js/question_bank.js"></script>
+    <script src="js/init.js"></script>
+
+    <!-- Stylesheets -->
+    <link href="https://unpkg.com/jspsych@8.1.0/css/jspsych.css" rel="stylesheet" type="text/css" />
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+
+    <!-- Init -->
+    <script>
+      window.onbeforeunload = function() {
+          return "Please do not refresh the page or go back, changes you made may not be saved!";
+      }
+      window.onload = function() {
+        document.querySelector("#trial-index").style.visibility = "hidden";
+        document.querySelector("#trial-timer").style.visibility = "hidden";
+        initStudy();
+      }
+    </script>
+  </head>
+  <body>
+    <div id="trial-metadata">
+      <div id="trial-index"></div>
+      <div id="trial-timer"></div>
+    </div>
+  </body>
+</html>

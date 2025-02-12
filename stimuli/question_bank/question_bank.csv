@@ -1,0 +1,252 @@
+question_id,question,source  ,category,topic,notes,status
+,Plain text of the question itself.,"Source of the question. Either the researcher that originally proposed it, the authors and date of the paper or prior work from which it was drawn, or, in the case of LLM-generated suggestions, the AI model.","""personal"" or ""small talk"" (whichever category the original question writer used to come up with the question)","[OPTIONAL]
+Topic area or psychological construct the question probes (e.g., ""preferences"" or ""religion""). Values in this column will not be enforced but offer the possibility of useful organization down the line.","[OPTIONAL]
+Any useful context or guidance about this question.","What the question is being used for. Possible values include ""brainstorm"", ""norming study"", ""normed selection"". "
+1,"Given the choice of anyone in the world (alive or dead), whom would you want as a dinner guest?","Aron, Melinat, Aron, Vallone, & Bator, 1997",personal,,,norming study 1
+2,Would you like to be famous? In what way?,"Aron, Melinat, Aron, Vallone, & Bator, 1997",personal,,,norming study 1
+3,"Before making a telephone call, do you ever rehearse what you are going to say? Why?","Aron, Melinat, Aron, Vallone, & Bator, 1997",personal,,,norming study 1
+4,What would constitute a perfect day for you?,"Aron, Melinat, Aron, Vallone, & Bator, 1997",personal,,,norming study 1
+5,When did you last sing to yourself? To someone else?,"Aron, Melinat, Aron, Vallone, & Bator, 1997",personal,,,norming study 1
+6,"If you were able to live to the age of 90 and retain either the mind or body of a 30-year-old for the last 60 years of your life, which would you want?","Aron, Melinat, Aron, Vallone, & Bator, 1997",personal,,,norming study 1
+7,Do you have a secret hunch about how you will die?,"Aron, Melinat, Aron, Vallone, & Bator, 1997",personal,,,norming study 1
+8,Name three things you and your closest friend or partner have in common.,"Aron, Melinat, Aron, Vallone, & Bator, 1997",personal,,,norming study 1
+9,For what in your life do you feel most grateful?,"Aron, Melinat, Aron, Vallone, & Bator, 1997",personal,,,norming study 1
+10,"If you could change anything about the way you were raised, what would it be?","Aron, Melinat, Aron, Vallone, & Bator, 1997",personal,,,norming study 1
+11,"In the space provided, take several minutes to tell your life story in as much detail as possible.","Aron, Melinat, Aron, Vallone, & Bator, 1997",personal,,,norming study 1
+12,"If you could wake up tomorrow having gained any one quality or ability, what would it be?","Aron, Melinat, Aron, Vallone, & Bator, 1997",personal,,,norming study 1
+13,"If a crystal ball could tell you the truth about yourself, your life, the future, or anything else, what would you want to know?","Aron, Melinat, Aron, Vallone, & Bator, 1997",personal,,,norming study 1
+14,Is there something that you’ve dreamed of doing for a long time? Why haven’t you done it?,"Aron, Melinat, Aron, Vallone, & Bator, 1997",personal,,,norming study 1
+15,What is the greatest accomplishment of your life?,"Aron, Melinat, Aron, Vallone, & Bator, 1997",personal,,,norming study 1
+16,What do you value most in a friendship?,"Aron, Melinat, Aron, Vallone, & Bator, 1997",personal,,,norming study 1
+17,What is your most treasured memory?,"Aron, Melinat, Aron, Vallone, & Bator, 1997",personal,,,norming study 1
+18,What is your most terrible memory?,"Aron, Melinat, Aron, Vallone, & Bator, 1997",personal,,,norming study 1
+19,"If you knew that in one year you would die suddenly, would you change anything about the way you are now living? Why?","Aron, Melinat, Aron, Vallone, & Bator, 1997",personal,,,norming study 1
+20,What does friendship mean to you?,"Aron, Melinat, Aron, Vallone, & Bator, 1997",personal,,,norming study 1
+21,What roles do love and affection play in your life?,"Aron, Melinat, Aron, Vallone, & Bator, 1997",personal,,,norming study 1
+22,Describe three to five positive characteristics of your closest friend or partner.,"Aron, Melinat, Aron, Vallone, & Bator, 1997",personal,,,norming study 1
+23,How close and warm is your family? Do you feel your childhood was happier than most other people’s?,"Aron, Melinat, Aron, Vallone, & Bator, 1997",personal,,,norming study 1
+24,Describe your relationship with one or both of your parents.,"Aron, Melinat, Aron, Vallone, & Bator, 1997",personal,,,norming study 1
+25,Complete this sentence: I wish I had someone with whom I could share…,"Aron, Melinat, Aron, Vallone, & Bator, 1997",personal,,,norming study 1
+26,"If you were to become a close friend with somebody you had just met, please share something that would be important for them to know.","Aron, Melinat, Aron, Vallone, & Bator, 1997",personal,,,norming study 1
+27,Describe an embarrassing moment in your life.,"Aron, Melinat, Aron, Vallone, & Bator, 1997",personal,,,norming study 1
+28,When did you last cry in front of another person? By yourself?,"Aron, Melinat, Aron, Vallone, & Bator, 1997",personal,,,norming study 1
+29,"What, if anything, is too serious to be joked about?","Aron, Melinat, Aron, Vallone, & Bator, 1997",personal,,,norming study 1
+30,"If you were to die this evening with no opportunity to communicate with anyone, what would you most regret not having told someone? Why haven’t you told them yet?","Aron, Melinat, Aron, Vallone, & Bator, 1997",personal,,,norming study 1
+31,"Your current home, containing everything you own, catches fire. After saving your loved ones and pets, you have time to safely make a final dash to save any one item. What would it be? Why?","Aron, Melinat, Aron, Vallone, & Bator, 1997",personal,,,norming study 1
+32,"Of all the people in your family, whose death would you find most tragic or difficult? Why?","Aron, Melinat, Aron, Vallone, & Bator, 1997",personal,,,norming study 1
+33,Share a personal problem or something you have struggled with and any experiences you have had trying to address it.,"Aron, Melinat, Aron, Vallone, & Bator, 1997",personal,,,norming study 1
+34,What are you most afraid of?,Stanford Psychology,personal,,,norming study 1
+35,What makes you most angry?,Stanford Psychology,personal,,,norming study 1
+36,Describe a time you felt most full of joy.,Stanford Psychology,personal,,,norming study 1
+37,What was the most difficult decision you ever had to make?,Stanford Psychology,personal,,,norming study 1
+38,Describe a person or idea that inspires you or gives you hope.,Stanford Psychology,personal,,,norming study 1
+39,What kind of activities help you recharge?,Stanford Psychology,personal,,,norming study 1
+40,"If you could visit your past self at a younger age and offer your past self advice about how to live your life (not just where to invest your money…), what would you say?",Stanford Psychology,personal,,,norming study 1
+41,"If you were given the chance to relive any day in your life, do you know which day it would be? What happened?",Stanford Psychology,personal,,,norming study 1
+42,What is your favorite trait about yourself and why?,Stanford Psychology,personal,,,norming study 1
+43,What is your least favorite trait about yourself and why?,Stanford Psychology,personal,,,norming study 1
+44,Do you think of yourself as creative? In what ways?,Stanford Psychology,personal,,,norming study 1
+45,Do you think of yourself as introverted or extraverted? Why?,Stanford Psychology,personal,,,norming study 1
+46,Do you enjoy performing for others? In what ways?,Stanford Psychology,personal,,,norming study 1
+47,Is there an age or time of your life when you felt most yourself? What was it?,Stanford Psychology,personal,,,norming study 1
+48,Do you believe in fate or destiny? Why?,Stanford Psychology,personal,,,norming study 1
+49,Do you believe in a God or higher power? Describe this belief (or why you do not).,Stanford Psychology,personal,,,norming study 1
+50,What does it mean to “know” somebody or feel close to them?,Stanford Psychology,personal,,,norming study 1
+51,"Do you think people can change fundamental things about who they are? If so, what kinds of things? If not, why not?",Stanford Psychology,personal,,,norming study 1
+52,What does family mean to you?,Stanford Psychology,personal,,,norming study 1
+53,What do you think makes somebody a good parent or caretaker?,Stanford Psychology,personal,,,norming study 1
+54,Do you believe in the death penalty? Why or why not?,Stanford Psychology,personal,,,norming study 1
+55,What do you think is the purpose of education?,Stanford Psychology,personal,,,norming study 1
+56,Would you want to go to space? Why or why not?,Stanford Psychology,personal,,,norming study 1
+57,Do you think your children (or the next generation of children) will inherit a world that is overall better than the current one or worse? In what ways will the future be better or worse?,Stanford Psychology,personal,,,norming study 1
+58,"If you had to give away all of your money tomorrow, what cause or causes would you want to support? Why?",Stanford Psychology,personal,,,norming study 1
+59,"If you could live anywhere in the world irrespective of cost, where would it be and why?",Stanford Psychology,personal,,,norming study 1
+60,What belief or value have you completely changed your mind about over the years?,Stanford Psychology,personal,,,norming study 1
+61,What part of your everyday life would have seemed magical or impossible to your great-grandparents?,Stanford Psychology,personal,,,norming study 1
+62,What is an example of a small gesture from someone else that has had a lasting impact on your life?,Stanford Psychology,personal,,,norming study 1
+63,What do you hope people say about you when you are not in the room?,Stanford Psychology,personal,,,norming study 1
+64,What tradition or custom did your family have that you thought was normal until you realized it was not?,Stanford Psychology,personal,,,norming study 1
+65,What seemingly ordinary moment in your life turned out to be a major turning point?,Stanford Psychology,personal,,,norming study 1
+66,What parts of yourself do you feel you have to hide or tone down in different social situations?,Stanford Psychology,personal,,,norming study 1
+67,What role or responsibility did you have in your family that you later realized was not typical for your age?,Stanford Psychology,personal,,,norming study 1
+68,What is a holiday tradition that your family valued?,Stanford Psychology,personal,,,norming study 1
+69,Do you like to travel? Why or why not?,Stanford Psychology,personal,,,norming study 1
+70,"If you could meet any person living or dead, who would it be and why?",Stanford Psychology,personal,,,norming study 1
+71,"If you could live somebody else’s life for a day, whose would you choose and why?",Stanford Psychology,personal,,,norming study 1
+72,"Do you have one or more tattoos? If so, describe one and the reasons you got it. If not, take a few moments to describe something you might consider getting as a tattoo (or why you prefer not to have one)",Stanford Psychology,personal,,,norming study 1
+73,What’s something you believe in that other people close to you do not?,Stanford Psychology,personal,,,norming study 1
+74,What’s a smell or sound that most people find unappealing but that you actually like?,Stanford Psychology,personal,,,norming study 1
+75,"If you opened a restaurant, what would it be like?",Stanford Psychology,personal,,,norming study 1
+76,"What is the piece of clothing you’ve owned for the longest time? Where is it from, what’s it like, and why have you kept it?",Stanford Psychology,personal,,,norming study 1
+77,"If someone offered to financially support a comfortable life for you and your loved ones, for the rest of your life, with the only stipulation that they would eat your body after you die, would you take the offer? Why or why not?",Stanford Psychology,personal,,,norming study 1
+78,What is your favorite organ of the body and why?,Stanford Psychology,personal,,,norming study 1
+79,What famous person do you think you would be great friends with if you met?,Stanford Psychology,personal,,,norming study 1
+80,"If you could send one cultural object to aliens to try to convince them of the worth of humanity, what would it be?",Stanford Psychology,personal,,,norming study 1
+81,"In general, do you wish people were MORE or LESS serious? Why?",Stanford Psychology,personal,,,norming study 1
+82,What quality in people do you find most enviable?,Stanford Psychology,personal,,,norming study 1
+83,Is there something about you that you struggle to admit to yourself or confront? Why?,Stanford Psychology,personal,,,norming study 1
+84,What would you want to be swallowed by? What would you most want to drown in?,Stanford Psychology,personal,,,norming study 1
+85,Name one of your core beliefs and describe why it is important to you.,Stanford Psychology,personal,,,norming study 1
+86,"Who do you think is the most underrated artist, performer, or athlete?",Stanford Psychology,personal,,,norming study 1
+87,"If you could see or listen to one work of art as you die, what would it be?",Stanford Psychology,personal,,,norming study 1
+88,"If you could cook just one dish to express who you are to someone, what would it be?",Stanford Psychology,personal,,,norming study 1
+89,What kinds of questions do you find most uncomfortable when others ask them? Why?,Stanford Psychology,personal,,There's a similar version of this question below that seems more openly worded,brainstorm
+90,What kinds of predicaments are you best at giving advice about?,Stanford Psychology,personal,,,norming study 1
+91,What physical feature of yours would a caricature artist blow out of proportion?,Stanford Psychology,personal,,,norming study 1
+92,"What are the stories behind your scars/tattoos, if you have any?",Stanford Psychology,personal,,Similar tattoo question above (could swap for this!),brainstorm
+93,What keeps you up at night?,Stanford Psychology,personal,,,norming study 1
+94,"Have you ever cried in public? If so, what was the reason?",Stanford Psychology,personal,,"Similar crying question above, though not identical",brainstorm
+95,What is your relationship like with your parents?,Stanford Psychology,personal,,Similar question above,brainstorm
+96,What kind of situations make you feel most awkward or embarrassed. Why?,Stanford Psychology,personal,,Kind of similar to questions above.,brainstorm
+97,What is the first thing you hope people notice about you?,Stanford Psychology,personal,,,norming study 1
+98,"If you had to write your own eulogy to be read at your funeral, what would it say in brief?",Stanford Psychology,personal,,,norming study 1
+99,"Under what circumstances do you think you could kill someone, if any?",Stanford Psychology,personal,,,norming study 1
+100,"If you died today, what would be your biggest regret?",Stanford Psychology,personal,,,norming study 1
+101,"If you could erase one memory from your mind, what would it be and why?",Stanford Psychology,personal,,,norming study 1
+102,How are you ACTUALLY doing these days?,Stanford Psychology,personal,,,norming study 1
+103,What’s one thing about yourself you hope will never change?,Stanford Psychology,personal,,,norming study 1
+104,"Are you religious or spiritual? What kind of religious or spiritual beliefs do you have, if any?",Stanford Psychology,personal,,,norming study 1
+105,"Do you want to have kids? If you already do, did you want kids before having them? Why or why not?",Stanford Psychology,personal,,,norming study 1
+106,What is your blood type?,Stanford Psychology,personal,,Seems culturally specific (see: https://www.bbc.com/news/magazine-20170787),brainstorm
+107,Would you get along with a perfect copy of yourself? Why or why not?,Stanford Psychology,personal,,,norming study 1
+108,"What are some pieces of media (books, movies, music, etc.) that have influenced how you think or see the world?",Stanford Psychology,personal,,,norming study 1
+109,What traits or skills do you most admire in others?,Stanford Psychology,personal,,,norming study 1
+110,What are you most afraid of being asked? What are you afraid of other people knowing about you?,Stanford Psychology,personal,,,norming study 1
+111,What would your past self think of your current self? Would you say a lot has changed regarding how you think about the world and what you believe in?,Stanford Psychology,personal,,,norming study 1
+112,What philosophy do you live by? What influences your major decisions in life? Are there people who you think share your philosophy?,Stanford Psychology,personal,,,norming study 1
+113,Who are the most important people in your life right now? Has this changed over time?,Stanford Psychology,personal,,,norming study 1
+114,What are your personal life or career priorities?,Stanford Psychology,personal,,,norming study 1
+115,What would you do for a hobby and/or job if you had no restrictions of any kind?,Stanford Psychology,personal,,,norming study 1
+116,"If someone wrote and directed a movie about you, what parts of your life (for example, components of your personality, beliefs, background, and life experiences) should be part of it?",Stanford Psychology,personal,,,norming study 1
+117,What did your parents teach you about love?,Stanford Psychology,personal,,,norming study 1
+118,What is your biggest vanity?,Stanford Psychology,personal,,,norming study 1
+119,What is your biggest insecurity?,Stanford Psychology,personal,,Maybe similar to other questions above,norming study 1
+120,"If you met with your 17 year-old self, would the younger you like the current you?",Stanford Psychology,personal,,,norming study 1
+121,What is the strangest belief you have ever sincerely held beyond the age of 13?,Stanford Psychology,personal,,,norming study 1
+122,What do you wish your parents did differently in raising you?,Stanford Psychology,personal,,,norming study 1
+123,When was the last time you picked your nose?,Stanford Psychology,personal,,,brainstorm
+124,When was the last time you entered flow state?,Stanford Psychology,personal,,Not sure how well known this phenomenon is (could ask in a way that clarifies it),brainstorm
+125,"If you were to seek political office, what policies would you run on?",Stanford Psychology,personal,,,norming study 1
+126,"Do you have any deceased relatives you wish you had been on better terms with before they passed? If you had an hour with them, what would you say?",Stanford Psychology,personal,,,norming study 1
+127,"Who, if anyone, would you totally uproot your life for and why?",Stanford Psychology,personal,,,norming study 1
+128,Do you have a favorite poem? What is it? Why?,Stanford Psychology,personal,,,norming study 1
+129,"When you think about the future, what do you most think about?",Stanford Psychology,personal,,,norming study 1
+130,"Is there a character from a TV show, movie, or book that you relate to? Why?",Stanford Psychology,personal,,,norming study 1
+131,Do you find dancing embarrassing? Why or why not? Describe the last time you danced.,Stanford Psychology,personal,,,norming study 1
+132,What was the best advice someone ever gave you?,Stanford Psychology,personal,,,norming study 1
+133,What person (living or dead) do you most admire or look up to? Why?,Stanford Psychology,personal,,,norming study 1
+134,When was the last time you walked for more than an hour? Describe where you went and what you saw.,"Aron, Melinat, Aron, Vallone, & Bator, 1997",small talk,,,norming study 1
+135,What was the best gift you ever received and why?,"Aron, Melinat, Aron, Vallone, & Bator, 1997",small talk,,,norming study 1
+136,"If you had to move away from your current home town or city, where would you go, and what would you miss most about where you currently live?","Aron, Melinat, Aron, Vallone, & Bator, 1997",small talk,,,norming study 1
+137,How did you celebrate last Halloween?,"Aron, Melinat, Aron, Vallone, & Bator, 1997",small talk,,,norming study 1
+138,Do you read a newspaper or online news source and which do you prefer? Why?,"Aron, Melinat, Aron, Vallone, & Bator, 1997",small talk,,,norming study 1
+139,What is a good number of people to have in a family or household and why?,"Aron, Melinat, Aron, Vallone, & Bator, 1997",small talk,,,norming study 1
+140,"If you could invent a new flavor of ice cream, what would it be?","Aron, Melinat, Aron, Vallone, & Bator, 1997",small talk,,,norming study 1
+141,What is the best restaurant you have been to in the last month? Describe your experience.,"Aron, Melinat, Aron, Vallone, & Bator, 1997",small talk,,,norming study 1
+142,Describe a current pet or previous pet you have had.,"Aron, Melinat, Aron, Vallone, & Bator, 1997",small talk,,,norming study 1
+143,What is your favorite holiday? Why?,"Aron, Melinat, Aron, Vallone, & Bator, 1997",small talk,,,norming study 1
+144,Describe the funniest thing that ever happened to you.,"Aron, Melinat, Aron, Vallone, & Bator, 1997",small talk,,,norming study 1
+145,Describe the most recent gift you received. Who was it from and what was the context?,"Aron, Melinat, Aron, Vallone, & Bator, 1997",small talk,,,norming study 1
+146,Describe the last time you went to the zoo.,"Aron, Melinat, Aron, Vallone, & Bator, 1997",small talk,,,norming study 1
+147,"Tell the names and approximate ages of your family members, as well as where they were born (to the extent you know this information). Include grandparents and aunts and uncles.","Aron, Melinat, Aron, Vallone, & Bator, 1997",small talk,,,norming study 1
+148,"Say a word that comes to mind, then say the first word you can think of that starts with the last letter of the word you just said. Keep adding words that start with the last letter of the previous word until you have 25 words. Any words will do–you do not need to make a sentence.","Aron, Melinat, Aron, Vallone, & Bator, 1997",small talk,,,norming study 1
+149,Do you like to get up early or stay up late? Is there anything funny that has resulted from this?,"Aron, Melinat, Aron, Vallone, & Bator, 1997",small talk,,"I like the ""updated"" version of this question below better (see ""night owl"")",brainstorm
+150,Where are you from? Name all of the places you’ve lived.,"Aron, Melinat, Aron, Vallone, & Bator, 1997",small talk,,,norming study 1
+151,What was or is your favorite class in school? Why?,"Aron, Melinat, Aron, Vallone, & Bator, 1997",small talk,,,norming study 1
+152,What was something fun or interesting you did over this past summer?,"Aron, Melinat, Aron, Vallone, & Bator, 1997",small talk,,,norming study 1
+153,What was the most recent gift you gave somebody? What was the reason or context?,"Aron, Melinat, Aron, Vallone, & Bator, 1997",small talk,,,norming study 1
+154,Who is your favorite actor or actress? Describe a favorite scene in which this person has acted.,"Aron, Melinat, Aron, Vallone, & Bator, 1997",small talk,,,norming study 1
+155,"What was your first impression of your current home town or city the first time you ever visited? If you were born where you currently live, describe how others often find it.","Aron, Melinat, Aron, Vallone, & Bator, 1997",small talk,,,norming study 1
+156,What is the best TV show or movie that you have seen in the last month? Describe it.,"Aron, Melinat, Aron, Vallone, & Bator, 1997",small talk,,,norming study 1
+157,What is your favorite holiday? Why?,"Aron, Melinat, Aron, Vallone, & Bator, 1997",small talk,,,norming study 1
+158,Where did you go to high school? What was your high school like?,"Aron, Melinat, Aron, Vallone, & Bator, 1997",small talk,,,norming study 1
+159,What is the best book you have read or started in the last three months? Describe it.,"Aron, Melinat, Aron, Vallone, & Bator, 1997",small talk,,,norming study 1
+160,What foreign country would you most like to visit? What attracts you to this place?,"Aron, Melinat, Aron, Vallone, & Bator, 1997",small talk,,,norming study 1
+161,Describe the best friend of one of your parents or siblings.,"Aron, Melinat, Aron, Vallone, & Bator, 1997",small talk,,,norming study 1
+162,How often do you get your hair cut? Where do you go? Have you ever had a really bad haircut experience?,"Aron, Melinat, Aron, Vallone, & Bator, 1997",small talk,,,norming study 1
+163,Did you have a class pet when you were in elementary school? Do you remember the pet’s name? What kind of animal was it?,"Aron, Melinat, Aron, Vallone, & Bator, 1997",small talk,,,norming study 1
+164,What is the last concert or performance you saw? Had you seen the band or performer before? Where?,"Aron, Melinat, Aron, Vallone, & Bator, 1997",small talk,,,norming study 1
+165,Do you subscribe to any magazines or read online articles from any magazines? Which ones have you subscribed to or read regularly in the past?,"Aron, Melinat, Aron, Vallone, & Bator, 1997",small talk,,,norming study 1
+166,Were you ever in a school play? What was your role? What was the plot of the play?,"Aron, Melinat, Aron, Vallone, & Bator, 1997",small talk,,,norming study 1
+167,Do you have any plants? How good are you at keeping them alive?,Stanford Psychology,small talk,,,norming study 1
+168,What is your go-to breakfast when you are in a hurry?,Stanford Psychology,small talk,,,norming study 1
+169,Have you ever had a nickname? How did you get it?,Stanford Psychology,small talk,,,norming study 1
+170,What is the longest you have gone without checking your phone?,Stanford Psychology,small talk,,,norming study 1
+171,Have you ever tried to learn a TikTok dance? How did it go?,Stanford Psychology,small talk,,,norming study 1
+172,What is your favorite piece of furniture in your home and where did you get it?,Stanford Psychology,small talk,,,norming study 1
+173,What is the weirdest thing you have ever found in your pocket after doing laundry?,Stanford Psychology,small talk,,,norming study 1
+174,Have you ever tried to cut your own hair? How did that work out?,Stanford Psychology,small talk,,,norming study 1
+175,Do you have a default pizza order? What is it?,Stanford Psychology,small talk,,,norming study 1
+176,What is your strategy for eating a really messy taco?,Stanford Psychology,small talk,,,norming study 1
+177,How many times do you hit the snooze button in the morning?,Stanford Psychology,small talk,,,norming study 1
+178,What school subject were you best at? Worst at?,Stanford Psychology,small talk,,,norming study 1
+179,"What is your favorite US city to visit? If you live outside the United States, do you have a favorite city to visit in your own country?",Stanford Psychology,small talk,,,norming study 1
+180,What is your job or occupation? Describe a typical day.,Stanford Psychology,small talk,,,norming study 1
+181,What is your earliest memory? Do you know how old you were in this memory?,Stanford Psychology,small talk,,,norming study 1
+182,Who was the first friend you made? How did you become friends? Are you still in touch with them?,Stanford Psychology,small talk,,,norming study 1
+183,Who was your favorite teacher in school and why?,Stanford Psychology,small talk,,,norming study 1
+184,What is your favorite day of the week? Least favorite? Why did you choose these?,Stanford Psychology,small talk,,,norming study 1
+185,"If you could add another month to the year and thereby prolong the season in which that month is inserted by an extra month, where would you insert the extra month? Come up with a name for this new month and describe the season you would be prolonging.",Stanford Psychology,small talk,,,norming study 1
+186,Come up with a new name for all seven days of the week based on how you feel about them (they can be made up words like “blesh” or use existing words like Boresday).,Stanford Psychology,small talk,,,norming study 1
+187,Do you drink caffeine during the day? What kind of caffeine do you drink? How many times a day do you have it?,Stanford Psychology,small talk,,,norming study 1
+188,"What is your favorite: ice cream flavor, color, musical instrument, animal, and English word?",Stanford Psychology,small talk,,,norming study 1
+189,What was the first car you owned or drove regularly? Describe it.,Stanford Psychology,small talk,,,norming study 1
+190,Pick a feeling you’ve experienced before for which there isn’t currently a word in English. Describe the feeling and make up a word for it.,Stanford Psychology,small talk,,,norming study 1
+191,"Do you routinely watch sports? Do you have a favorite sport or team? If you had to choose a new team or sport to follow, what would you choose and why?",Stanford Psychology,small talk,,,norming study 1
+192,What’s the best pair of shoes you own or have owned? What makes them awesome?,Stanford Psychology,small talk,,,norming study 1
+193,Do you play any instruments or did you play any growing up? Do you enjoy playing music?,Stanford Psychology,small talk,,,norming study 1
+194,Do you have a favorite band or musical genre? Describe either.,Stanford Psychology,small talk,,,norming study 1
+195,"Did you play any sports growing up? If multiple, which was your favorite? Do you still play?",Stanford Psychology,small talk,,,norming study 1
+196,What was your favorite board game growing up or currently?,Stanford Psychology,small talk,,,norming study 1
+197,"Do you wear glasses or contacts? If so, when did you first start and are you able to do any activities without them? If not, which sense (touch, sight, hearing, smell, taste) do you think is your least acute? Why do you think this?",Stanford Psychology,small talk,,,norming study 1
+198,"Do you know any “party tricks”? If so, describe them. If not, describe one you would like to learn.",Stanford Psychology,small talk,,,norming study 1
+199,What was something interesting you learned recently? This can be a fact or something you learned how to do. Describe how or where you learned this.,Stanford Psychology,small talk,,,norming study 1
+200,Do you have a favorite food or cuisine? Describe it.,Stanford Psychology,small talk,,,norming study 1
+201,When was the last time you went to the movies? What did you see? Did you like it?,Stanford Psychology,small talk,,,norming study 1
+202,Who was the last person you met up with outside your home or theirs? What did you do?,Stanford Psychology,small talk,,,norming study 1
+203,What app on your phone do you use the most frequently? In what contexts do you use it?,Stanford Psychology,small talk,,,norming study 1
+204,Is there a person or are there people in your life that you call regularly to check up on? How often do you call them and why?,Stanford Psychology,small talk,,,norming study 1
+205,Open your phone and pull up a recent photo you took. Describe what is happening in this photo.,Stanford Psychology,small talk,,,norming study 1
+206,"Do you lose things easily? What was the most recent thing you lost or misplaced? If you ended up finding it, where did you find it? If not, have you replaced it?",Stanford Psychology,small talk,,,norming study 1
+207,"Is your current home rented or owned by you? If rented, are you hoping to one day own a home? If owned, how long have you owned it for?",Stanford Psychology,small talk,,,norming study 1
+208,Do you consider yourself more of a “cat person” or a “dog person”? Why?,Stanford Psychology,small talk,,,norming study 1
+209,Do you cook often? What is your favorite meal or dish to cook and why?,Stanford Psychology,small talk,,,norming study 1
+210,What was the first thing you ever learned to cook by yourself? Who taught you?,Stanford Psychology,small talk,,,norming study 1
+211,Do you have a favorite TV show or one you watched recently that you particularly enjoyed? Describe it.,Stanford Psychology,small talk,,,norming study 1
+212,How often do you do your laundry? Do you go to a laundromat or do laundry in your own home (or use a laundry service)?,Stanford Psychology,small talk,,,norming study 1
+213,Do you enjoy staying in hotels? What do you like or not like about them?,Stanford Psychology,small talk,,,norming study 1
+214,"Is there a sound that really bothers you? If so, what is it? If not, has someone ever asked you to stop making a sound because it bothered them?",Stanford Psychology,small talk,,,norming study 1
+215,Is there anybody (a famous person or someone you know) that you’ve learned to do an impression of? How did you learn this? Who did you most recently show this to?,Stanford Psychology,small talk,,,norming study 1
+216,Do you have a bedtime routine? What do you typically do to fall asleep?,Stanford Psychology,small talk,,,norming study 1
+217,"Do you commute to work or work from home? If you commute, how do you usually get there (for example, by car, bus, bicycle)? How long does it take? If you work from home, do you have a room set aside just for work?",Stanford Psychology,small talk,,,norming study 1
+218,Is there a food that you would feel comfortable eating for lunch every day for the rest of your life? What is it? Where did you first have this food?,Stanford Psychology,small talk,,,norming study 1
+219,"What are some topics you find yourself drawn to (for example, the roman empire, medieval cat paintings) that aren’t related to other aspects of your life?",Stanford Psychology,small talk,,,norming study 1
+220,"If you had to live in a movie, book, or tv show universe (for example, the world of harry potter, twilight, dune or hunger games), which one would you choose and why?",Stanford Psychology,small talk,,,norming study 1
+221,"What magical ability (for example, reading minds, teleporting, invisibility) would you want to have and why?",Stanford Psychology,small talk,,,norming study 1
+222,When was the last time you stopped to appreciate nature? Describe where you were and what you were doing.,Stanford Psychology,small talk,,,norming study 1
+223,What is the most unusual food you’ve ever eaten? Describe where and when you last had this.,Stanford Psychology,small talk,,,norming study 1
+224,"If money was not an obstacle, where would you most like to travel? What would you do there?",Stanford Psychology,small talk,,,norming study 1
+225,"If you won the lottery, what is the first thing you would do?",Stanford Psychology,small talk,,,norming study 1
+226,"If you had to train an animal to perform in a circus or other show, what animal would you train and why?",Stanford Psychology,small talk,,,norming study 1
+227,"Do you have any unusual genetic traits (for example, cilantro tasting like soap, or particular allergies)?",Stanford Psychology,small talk,,,norming study 1
+228,Do you like pineapple on pizza? What is your favorite pizza topping?,Stanford Psychology,small talk,,Similar question above,brainstorm
+229,Do you have a favorite memory of a sunset? Describe where and when this occurred.,Stanford Psychology,small talk,,,norming study 1
+230,What kind of music do you most often listen to?,Stanford Psychology,small talk,,"Similar question above (in ""personal"")",brainstorm
+231,"What was a movie, book, or song that you enjoyed recently?",Stanford Psychology,small talk,,Similar questions above about movies and books individually,brainstorm
+232,Are there any vegetables you don’t eat? When was the last time you ate one of those things?,Stanford Psychology,small talk,,,norming study 1
+233,"If you could telepathically control one crocodile, what would you do with this ability?",Stanford Psychology,small talk,,,norming study 1
+234,Describe the weather where you are currently. Is this unusual weather for this time of year?,Stanford Psychology,small talk,,,norming study 1
+235,What do you do for work?,Stanford Psychology,small talk,,Similar question above,brainstorm
+236,Choose one item of clothing you are currently wearing and describe how you came to own this item.,Stanford Psychology,small talk,,,norming study 1
+237,How is your day going?,Stanford Psychology,small talk,,,norming study 1
+238,"Did you commute to work today and if so, was there traffic? Was it better or worse than usual?",Stanford Psychology,small talk,,,norming study 1
+239,"Do you have anything planned in the coming weeks or months for which you are especially excited? If so, describe this plan. If not, describe something you would like to plan for the coming weeks or months if you had the time or resources.",Stanford Psychology,small talk,,,norming study 1
+240,"Pick a family member, friend or partner and describe what you think they are currently doing.",Stanford Psychology,small talk,,,norming study 1
+241,"Are you a morning person or a night owl? Has this always been the case? If not, when did this change for you?",Stanford Psychology,small talk,,,norming study 1
+242,Do you have any creative hobbies? Do you create art? Describe these hobbies or activities.,Stanford Psychology,small talk,,,norming study 1
+243,What kinds of things do you procrastinate on the most and why?,Stanford Psychology,small talk,,,norming study 1
+244,Are you typically early for things or do you often run late? Has this ever gotten you into trouble or helped you out in some way?,Stanford Psychology,small talk,,,norming study 1
+245,What is the most sophisticated piece of technology or machinery you understand? How did you learn about it?,Stanford Psychology,small talk,,,norming study 1
+246,"Do you use social media sites or apps? If so, which ones and why? If not, why not?",Stanford Psychology,small talk,,,norming study 1
+247,"Do you think of yourself as ""handy"" when it comes to building things or doing home improvement? If so, describe a time you recently used this skill. If not, describe what you do when you need something fixed.",Stanford Psychology,small talk,,,norming study 1
+248,When was the last time you went to a museum? What did you see?,Stanford Psychology,small talk,,,norming study 1
