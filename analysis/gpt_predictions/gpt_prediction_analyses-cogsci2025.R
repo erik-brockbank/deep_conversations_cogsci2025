@@ -1,8 +1,7 @@
 
 #
-# Analyses of GPT prediction data for initial submission to Cog Sci 2025
+# Analyses of GPT prediction data for publication in Cog Sci 2025
 #
-
 
 
 # INIT ----
@@ -12,20 +11,13 @@ setwd(dirname(rstudioapi::getSourceEditorContext()$path))
 library(brms)
 library(tidyverse)
 
-# GLOBALS ----
 
+# GLOBALS ----
 ALL_QUESTIONS_DATA = '../../data/gpt_predictions/all_questions/gpt-4o'
 DEEP_SHALLOW_DATA = '../../data/gpt_predictions/deep_shallow_contrast/gpt-4o'
 FIGURE_PATH = '../../results/gpt_predictions'
 
-
-
-COLORS = c(
-  'personal' = '#C8A2C8',
-  'small talk' = '#8FB0A9'
-)
-SCALE_COLOR = '#0968AF'
-
+# ggplot theme
 default_plot_theme = theme(
   # titles
   plot.title = element_text(face = 'bold', size = 32, family = 'Charter', margin = margin(b = 0.5, unit = 'line')),
@@ -54,11 +46,10 @@ default_plot_theme = theme(
 )
 
 
-
 # READ DATA ----
-
 gpt_data_all_q = read_csv(paste(ALL_QUESTIONS_DATA, 'model_predictions.csv', sep = '/'))
 glimpse(gpt_data_all_q)
+
 gpt_data_deep_shallow = read_csv(paste(DEEP_SHALLOW_DATA, 'model_predictions.csv', sep = '/'))
 glimpse(gpt_data_deep_shallow)
 
@@ -77,22 +68,18 @@ sum(is.na(gpt_data_deep_shallow$scaleResponsePredictionSuccess))
 # Select only data for which the GPT prediction was a success
 gpt_all_q_clean = gpt_data_all_q |>
   filter(scaleResponsePredictionSuccess == 1)
-glimpse(gpt_all_q_clean)
+
 gpt_deep_shallow_clean = gpt_data_deep_shallow |>
   filter(scaleResponsePredictionSuccess == 1)
-glimpse(gpt_deep_shallow_clean)
 
 
-
-
-# FIGURE (all questions): Correlation ----
+# FIGURE: Correlation (all questions) ----
 
 # Correlation
 cor.test(gpt_all_q_clean$scaleResponsePrediction, gpt_all_q_clean$scaleResponse)
 
-
-# 95% CI
-# Bin model prediction values to calculate average participant response in each bin
+# Figure
+scale_color = '#0968AF'
 correlation_summary_fig = gpt_all_q_clean |>
   mutate(
     # NB: nested casting here to get the bin as a numeric value so we can plot the underlying data behind this if we want
@@ -115,7 +102,7 @@ correlation_summary_fig = gpt_all_q_clean |>
     fun.data = 'mean_cl_boot',
     size = 1.1,
     linewidth = 1,
-    color = SCALE_COLOR
+    color = scale_color
   ) +
   geom_jitter(
     data = gpt_all_q_clean,
@@ -123,7 +110,7 @@ correlation_summary_fig = gpt_all_q_clean |>
     size = 1,
     alpha = 0.1,
     width = 1, # NB: toggle width to better emphasize distribution (GPT predictions sit mostly at 5/10 intervals)
-    color = SCALE_COLOR
+    color = scale_color
   ) +
   geom_abline(
     linewidth = 1.0,
@@ -143,6 +130,7 @@ correlation_summary_fig = gpt_all_q_clean |>
   ) +
   default_plot_theme
 
+# View figure
 correlation_summary_fig
 # Save figure
 ggsave(
@@ -155,7 +143,7 @@ ggsave(
 )
 
 
-# ANALYSIS (all questions): Model predictions ----
+# ANALYSIS: Model predictions (all questions) ----
 
 # BRMS comparison: does model prediction help predict people's response?
 # NB: both models below take several minutes to fit
@@ -175,25 +163,25 @@ m1_brms = brm(
   seed = 1,
   iter = 10000
 )
+
 # Leave-one-out comparison for each model
 # NB: this takes several mins to run
 m0_brms = add_criterion(
   m0_brms,
-  criterion = "loo",
+  criterion = 'loo',
   reloo = T,
   file = m0_file
 )
 m1_brms = add_criterion(
   m1_brms,
-  criterion = "loo",
+  criterion = 'loo',
   reloo = T,
   file = m1_file
 )
 loo_compare(m0_brms, m1_brms)
 
 
-
-# ANALYSIS (all questions): MSE ----
+# ANALYSIS: Shuffled MSE (all questions) ----
 
 # Shuffle predictions across participants:
 # Resamples prolificID, then grabs *all* slider responses for each participant in shuffled order,
@@ -267,7 +255,7 @@ simulations |>
   default_plot_theme
 
 
-# FIGURE (deep-shallow contrast): log MSE ----
+# FIGURE: log MSE (deep-shallow contrast) ----
 
 # Add empirical squared prediction error
 gpt_deep_shallow_clean$prediction_squared_error = (gpt_deep_shallow_clean$scaleResponse - gpt_deep_shallow_clean$scaleResponsePrediction)^2
@@ -279,7 +267,12 @@ subject_mse = gpt_deep_shallow_clean |>
     log_MSE = log10(mean(prediction_squared_error))
   ) |>
   ungroup()
-# Plot log MSE
+
+# Figure
+condition_colors = c(
+  'personal' = '#C8A2C8',
+  'small talk' = '#8FB0A9'
+)
 subject_mse_fig = subject_mse |>
   ggplot(
     aes(
@@ -294,13 +287,13 @@ subject_mse_fig = subject_mse |>
   ) +
   geom_vline(
     xintercept = mean(subject_mse$log_MSE[subject_mse$scaleResponseEvidence == 'personal']),
-    color = COLORS['personal'],
+    color = condition_colors['personal'],
     linewidth = 1,
     linetype = 'dashed'
   ) +
   geom_vline(
     xintercept = mean(subject_mse$log_MSE[subject_mse$scaleResponseEvidence == 'small talk']),
-    color = COLORS['small talk'],
+    color = condition_colors['small talk'],
     linewidth = 1,
     linetype = 'dashed'
   ) +
@@ -309,11 +302,11 @@ subject_mse_fig = subject_mse |>
   ) +
   scale_fill_manual(
     name = element_blank(),
-    values = COLORS
+    values = condition_colors
   ) +
   scale_color_manual(
     name = element_blank(),
-    values = COLORS
+    values = condition_colors
   ) +
   default_plot_theme +
   theme(
@@ -323,6 +316,7 @@ subject_mse_fig = subject_mse |>
     axis.line.y = element_blank()
   )
 
+# View figure
 subject_mse_fig
 # Save figure
 ggsave(
@@ -335,9 +329,7 @@ ggsave(
 )
 
 
-
-
-# ANALYSIS (deep-shallow contrast): MSE ----
+# ANALYSIS: Shuffled MSE (deep-shallow contrast) ----
 
 # Separate out "deep" and "shallow" conditions
 gpt_deep_only = gpt_deep_shallow_clean |>
@@ -353,20 +345,13 @@ gpt_shallow_only = gpt_deep_shallow_clean |>
     scaleID
   )
 
-# Run nsims shuffled MSE calculations for each condition
+# Run nsims shuffled MSE calculations for deep questions only
 # NB: uses same `get_mse_subj` function defined above
 simulations_deep_only = data.frame(
-  'simulation' = seq(1, nsims),
+  'simulation' = seq(1, nsims), # NB: nsims = 1000 ~ 1min
   'mean_shuffled_squared_error' = replicate(
     nsims,
     get_mse_subj(gpt_deep_only)
-  )
-)
-simulations_small_talk_only = data.frame(
-  'simulation' = seq(1, nsims),
-  'mean_shuffled_squared_error' = replicate(
-    nsims,
-    get_mse_subj(gpt_shallow_only)
   )
 )
 
@@ -380,6 +365,7 @@ simulations_deep_only |>
     sims = n(),
     se_mse = sd(mean_shuffled_squared_error) / sqrt(n())
   )
+
 # Compare observed to simulations:
 mean(gpt_deep_only$prediction_squared_error)
 
@@ -400,6 +386,16 @@ simulations_deep_only |>
   ) +
   default_plot_theme
 
+# Run nsims shuffled MSE calculations for small talk questions only
+# NB: uses same `get_mse_subj` function defined above
+simulations_small_talk_only = data.frame(
+  'simulation' = seq(1, nsims), # NB: nsims = 1000 ~ 1min
+  'mean_shuffled_squared_error' = replicate(
+    nsims,
+    get_mse_subj(gpt_shallow_only)
+  )
+)
+
 # Summarize small talk questions simulated MSE
 simulations_small_talk_only |>
   summarize(
@@ -410,6 +406,7 @@ simulations_small_talk_only |>
     sims = n(),
     se_mse = sd(mean_shuffled_squared_error) / sqrt(n())
   )
+
 # Compare observed to simulations:
 mean(gpt_shallow_only$prediction_squared_error)
 
@@ -431,10 +428,9 @@ simulations_small_talk_only |>
   default_plot_theme
 
 
+# ANALYSIS: Model predictions (deep-shallow contrast) ----
 
-# ANALYSIS (deep-shallow contrast): Model predictions ----
-
-# BRMS comparison: does model prediction error differ across question category ('deep', 'shallow')?
+# BRMS comparison: does model prediction error differ across question category ("deep", "shallow")?
 # NB: both models below take several minutes to fit
 m0_file = 'brms_fits/deep_shallow_baseline'
 m0_brms = brm(
@@ -450,21 +446,19 @@ m1_brms = brm(
   file = m1_file,
   seed = 1
 )
+
 # Leave-one-out comparison for each model
 m0_brms = add_criterion(
   m0_brms,
-  criterion = "loo",
+  criterion = 'loo',
   reloo = T,
   file = m0_file
 )
 m1_brms = add_criterion(
   m1_brms,
-  criterion = "loo",
+  criterion = 'loo',
   reloo = T,
   file = m1_file
 )
 loo_compare(m0_brms, m1_brms)
 emmeans(m1_brms, 'scaleResponseEvidence')
-
-
-

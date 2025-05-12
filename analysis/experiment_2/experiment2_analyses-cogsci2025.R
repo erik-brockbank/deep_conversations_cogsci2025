@@ -1,7 +1,6 @@
 
-
 #
-# Analyses of experiment 2 data for initial submission to Cog Sci 2025
+# Analyses of experiment 2 data for publication in Cog Sci 2025
 #
 
 
@@ -21,9 +20,7 @@ SCALE_DATA = 'scale_data.csv'
 TEXT_DATA = 'text_data.csv'
 FIGURE_PATH = '../../results/experiment_2'
 
-SCALE_COLOR = '#0968AF'
-
-
+# ggplot theme
 default_plot_theme = theme(
   # titles
   plot.title = element_text(face = 'bold', size = 32, family = 'Charter', margin = margin(b = 0.5, unit = 'line')),
@@ -52,14 +49,18 @@ default_plot_theme = theme(
 )
 
 
-
 # READ DATA ----
 survey_data = read_csv(paste(DATA_PATH, SURVEY_DATA, sep = '/'))
+glimpse(survey_data)
+
 scale_data = read_csv(paste(DATA_PATH, SCALE_DATA, sep = '/'))
+glimpse(scale_data)
+
 text_data = read_csv(paste(DATA_PATH, TEXT_DATA, sep = '/'))
+glimpse(text_data)
 
 
-# ATTENTION CHECKS ----
+# EXCLUSIONS: Attention check failures ----
 # Exclude participants who failed to respond correctly to attention checks
 
 # Summarize responses to attention check questions
@@ -92,18 +93,17 @@ text_data = text_data |> filter(!(prolificID %in% attention_check_exclusion_IDs)
 survey_data = survey_data |> filter(!(prolificID %in% attention_check_exclusion_IDs))
 
 
-# FREE RESPONSE EXCLUSIONS ----
+# EXCLUSIONS: AI responses ----
 # Remove anybody who was obviously using LLMs or may have been a bot
 
 # What did people say to each question?
-# NB: toggle the index in each of the calls below to print each successive question and the responses
+# NB: toggle the index `idx` in each of the calls below to print each successive question and the responses
 questionIDs = unique(text_data$questionID)
-idx = 8
+idx = 11 # 1-indexed, max = 12
 unique(text_data$questionText[text_data$questionID == questionIDs[idx]])
 unique(text_data$response[text_data$questionID == questionIDs[idx]])
 
-
-# NB: strange response to the party trick question from one participant, viewing their full response set here
+# NB: strange responses from one participant, viewing their full response set here
 unique(text_data$response[text_data$prolificID == '678b785febfcc8066ee47f94'])
 
 # Remove this person
@@ -115,15 +115,11 @@ text_data = text_data |> filter(!(prolificID %in% text_exclusion_IDs))
 survey_data = survey_data |> filter(!(prolificID %in% text_exclusion_IDs))
 
 
-# WRITE TO CSV ----
+# EXCLUSIONS: Write clean data to CSV ----
 # NB: need processed data for GPT pipeline so GPT only predicts participants who were included in analyses
-# Write to csv
 write_csv(text_data, paste(DATA_PATH, 'text_data_processed.csv', sep='/'))
 write_csv(scale_data, paste(DATA_PATH, 'scale_data_processed.csv', sep='/'))
 write_csv(survey_data,  paste(DATA_PATH, 'survey_data_processed.csv', sep='/'))
-
-
-
 
 
 # DEMOGRAPHICS ----
@@ -178,7 +174,8 @@ text_data |>
   ungroup()
 
 
-# FREE RESPONSE LENGTH ----
+# ANALYSIS: Free response length ----
+
 # Add length of free response answers
 text_data = text_data |>
   mutate(
@@ -188,25 +185,34 @@ text_data = text_data |>
 # Compare response lengths by question category
 m0 = lmer(
   data = text_data,
-  response_length ~ 1 + (1 | prolificID) + (1 | questionID)
+  response_length ~ 1 + (1 | prolificID) + (1 | questionID),
+  REML = F
 )
 m1 = lmer(
   data = text_data,
-  response_length ~ 1 + questionCategory + (1 | prolificID) + (1 | questionID)
+  response_length ~ 1 + questionCategory + (1 | prolificID) + (1 | questionID),
+  REML = F
 )
 anova(m0, m1)
 emmeans(m1, pairwise ~ questionCategory)
 
 
-# FREE RESPONSE CONTENT ----
-# What did people say to each question?
-# NB: toggle the indices below to print each free response question and the unique responses
-# > Use this to select interesting and varied free response for tables, figures, etc.
-# NB: used questionIDs[2], index 44 and questionIDs[9], index 22 in initial submission
-questionIDs = unique(text_data$questionID)
-unique(text_data$questionText[text_data$questionID == questionIDs[9]])
-unique(text_data$response[text_data$questionID == questionIDs[9]])
+# TABLE: Sample free response answers ----
+# Display interesting responses to small talk and personal questions
+# NB: toggle questionID and row indices below (or remove indices) to view other responses
 
+# Get unique question IDs
+questionIDs = unique(text_data$questionID)
+
+# Get question text
+unique(text_data$questionText[text_data$questionID == questionIDs[2]])
+# Get response text
+text_data$response[text_data$questionID == questionIDs[2]][44]
+
+# Get question text
+unique(text_data$questionText[text_data$questionID == questionIDs[9]])
+# Get response text
+text_data$response[text_data$questionID == questionIDs[9]][22]
 
 
 # FIGURE: Response distribution for sample scales ----
@@ -218,7 +224,8 @@ sample_scales = c(
   17 # high average ("caring")
 )
 
-# 95% CI
+# Figure
+scale_color = '#0968AF'
 scale_sample = scale_data |>
   filter(scaleID %in% sample_scales) |>
   mutate(
@@ -234,13 +241,13 @@ scale_sample = scale_data |>
     fun.data = 'mean_cl_boot',
     size = 1.5,
     linewidth = 1,
-    color = SCALE_COLOR
+    color = scale_color
   ) +
   gghalves::geom_half_point(
     side = 'l',
     alpha = 0.5,
     range_scale = 0.25,
-    color = SCALE_COLOR
+    color = scale_color
   ) +
   geom_text(
     data = scale_data |>
@@ -254,8 +261,9 @@ scale_sample = scale_data |>
       label = scaleText
     ),
     vjust = -5,
-    size = 5,
-    color = SCALE_COLOR
+    size = 6,
+    color = scale_color,
+    family = 'Charter'
   ) +
   scale_x_discrete(
     name = element_blank(),
@@ -280,6 +288,7 @@ scale_sample = scale_data |>
   ) +
   coord_flip()
 
+# View figure
 scale_sample
 # Save figure
 ggsave(
@@ -290,9 +299,3 @@ ggsave(
   width = 8,
   height = 7,
 )
-
-
-
-
-
-
