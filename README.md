@@ -7,6 +7,8 @@ When first meeting somebody, we're faced with the challenge of "getting to know 
 
 **Full pre-print available [HERE](https://osf.io/preprints/psyarxiv/k6zme_v1)**
 
+**Demo [EXPERIMENT 1](https://erik-brockbank.github.io/deep_conversations/experiments/norming_study/index.html) and [EXPERIMENT 2](https://erik-brockbank.github.io/deep_conversations/experiments/introspection_study/index.html)**
+
 ![Experiment Overview](overview-e1+e2.png)
 
 
